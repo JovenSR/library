@@ -1,5 +1,31 @@
 <html>
+	<head>
+  		<link rel="stylesheet" href="style.css">
+	</head>
 	<body>
+		<button id="open">Add New Book</button>
+		
+		<div class="modal">
+  			<div class="modal-content">
+
+    			<span class="close">&times;</span>
+
+    			<form id="form" method="post">
+					<b>Title</b>: <input type="text" name="title">
+					<b>Author</b>: <input type="text" name="author">
+					<b>Pages</b>: <input type="text" name="pages">
+					<b>Status</b>: <label for="read">Read</label><input type="radio" name="status" value="read">
+								   <label for="notYetRead">Not Yet Read</label><input type="radio" name="status" value="Not Yet Read">
+					<input id="submit" type="submit" name="submit" value="Submit">
+				</form>
+
+  			</div>
+
+		</div>
+
+		<div class="container">
+			
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>
