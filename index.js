@@ -72,7 +72,7 @@ function render() {
 	//showcases each book from the library
 	myLibrary.forEach(function(item) {
 		let div = document.createElement('div');
-		let title = document.createElement('p');
+		let title = document.createElement('h1');
 		let author = document.createElement('p');
 		let pages = document.createElement('p');
 		let read = document.createElement('button');
@@ -97,7 +97,7 @@ function render() {
 			render();
 		})
 		
-		title.innerHTML = 'Book: ' + item.title;
+		title.innerHTML = item.title;
 		author.innerHTML = 'Author: ' + item.author;
 		pages.innerHTML = 'Pages: ' + item.pages;
 		read.innerHTML = 'Status: ' + item.read;
