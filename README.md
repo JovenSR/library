@@ -1,4 +1,4 @@
-Link to project page: https://jovensr.github.io/Calculator/
+Link to project page: https://jovensr.github.io/library/
 
 This is a Library project inspired by The Odin Project.
 
