@@ -31,6 +31,7 @@ body {
 }
 
 .modal-content {
+	position: relative;
   	background-color: #fefefe;
   	margin: auto;
   	padding: 20px;
@@ -39,6 +40,13 @@ body {
   	width: 40%;
   	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
   	display: grid;
+  	animation-name: animatetop;
+  	animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
 .modal-content:hover {
@@ -68,9 +76,9 @@ body {
 }
 
 #submit {
-	background: #8034eb;
+	background: #367e99;
 	color: white;
-	border: 1px solid #8034eb;
+	border: 1px solid #367e99;
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.35rem;
@@ -81,7 +89,7 @@ body {
 }
 
 #submit:hover {
-	background: #9f34eb;
+	background: #5d8c9e;
 
 }
 
@@ -91,7 +99,7 @@ body {
 
 /* The Close Button */
 .close {
-  	color: #aaaaaa;
+  	color: #367e99;
   	float: right;
   	font-size: 28px;
   	font-weight: bold;
@@ -100,7 +108,7 @@ body {
 
 .close:hover,
 .close:focus {
-  	color: #000;
+  	color: #5d8c9e;
   	text-decoration: none;
   	cursor: pointer;
 }
@@ -128,13 +136,13 @@ body {
 
 .author {
 	font-weight: 700;
-	color: #8034eb;
+	color: #367e99;
 	margin: 0 0 30px;
 }
 
 .read {
-	background: #8034eb;
-	border: 1px solid #8034eb;
+	background: #367e99;
+	border: 1px solid #367e99;
 	color: white;
 	margin-bottom: 	10px;
 	font-weight: 700;
@@ -146,8 +154,8 @@ body {
 }
 
 .remove {
-	background: #8034eb;
-	border: 1px solid #8034eb;
+	background: #367e99;
+	border: 1px solid #367e99;
 	color: white;
 	margin-top: 10px;
 	font-weight: 700;
@@ -159,7 +167,7 @@ body {
 
 .remove:hover,
 .read:hover {
-	background: #9f34eb;
+	background: #5d8c9e;
 }
 
 .pages {
@@ -171,14 +179,13 @@ body {
 	justify-self: center;
 	margin: 40 20 50 20;
 	padding: 0.35rem;
-	background: #8034eb;
+	background: #367e99;
 	color: white;
 	font-weight: 700;
 	text-decoration: none;
-	border: 1px solid #8034eb;
+	border: 1px solid #367e99;
 	border-radius: 25px;
 }
 
 #open:hover {
-	background: #9f34eb;
-}
+	background: #5d8c9e;
