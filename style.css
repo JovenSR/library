@@ -1,12 +1,16 @@
 html {
-  font-family: 'Nunito', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 	1.6;
+  	font-family: 'Nunito', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	line-height: 	1.6;
+}
+
+body {
+	display: grid;
 }
 
 .container {
-	display: grid;
+    display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-auto-flow: row;
 	grid-gap: 20px;
@@ -15,38 +19,90 @@ html {
 .modal {
 	display: none;
 	position: fixed; /* Stay in place */
-	 z-index: 1; /* Sit on top */
-	 padding-top: 100px; /* Location of the box */
-	 left: 0;
-	 top: 0;
-	 width: 100%; /* Full width */
-	 height: 100%; /* Full height */
-	 overflow: auto; /* Enable scroll if needed */
-	 background-color: rgb(0,0,0); /* Fallback color */
-	 background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  	background-color: #fefefe;
+  	margin: auto;
+  	padding: 20px;
+  	border: 1px solid #efefef;
+  	border-radius: 25px;
+  	width: 40%;
+  	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  	display: grid;
+}
+
+.modal-content:hover {
+	box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);	
+}
+
+#form {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+#formstatus {
+	display: grid;
+	grid-template-columns: 1fr 7.5fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "stretch1 stretch2"
+						 "stretch3 stretch4"
+}
+
+#form > div:not(:nth-last-child(-n+2)) {
+	display: grid;
+}
+
+#formsubmit {
+	display: grid;
+}
+
+#submit {
+	background: #8034eb;
+	color: white;
+	border: 1px solid #8034eb;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.35rem;
+	transition: all 0.2s ease;
+	border-radius: 25px;
+	width: 25%;
+	justify-self: center;
+}
+
+#submit:hover {
+	background: #9f34eb;
+
+}
+
+#formpages > input {
+	width: 10%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  	color: #aaaaaa;
+  	float: right;
+  	font-size: 28px;
+  	font-weight: bold;
+  	justify-self: end;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  	color: #000;
+  	text-decoration: none;
+  	cursor: pointer;
 }
 
 .div {
@@ -60,7 +116,7 @@ html {
 }
 
 .div:hover {
-  box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -84,6 +140,9 @@ html {
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.35rem;
+	transition: all 0.2s ease;
+	border-radius: 25px;
+
 }
 
 .remove {
@@ -94,6 +153,8 @@ html {
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.35rem;
+	transition: all 0.2s ease;
+	border-radius: 25px;
 }
 
 .remove:hover,
@@ -101,9 +162,23 @@ html {
 	background: #9f34eb;
 }
 
-
-
 .pages {
 	color: #444444;
 }
 
+#open {
+	width: 10%;
+	justify-self: center;
+	margin: 40 20 50 20;
+	padding: 0.35rem;
+	background: #8034eb;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	border: 1px solid #8034eb;
+	border-radius: 25px;
+}
+
+#open:hover {
+	background: #9f34eb;
+}

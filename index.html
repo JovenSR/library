@@ -11,16 +11,24 @@
     			<span class="close">&times;</span>
 
     			<form id="form" method="post">
-					<b>Title</b>: <input type="text" name="title">
-					<b>Author</b>: <input type="text" name="author">
-					<b>Pages</b>: <input type="text" name="pages">
-					<b>Status</b>: <label for="read">Read</label><input type="radio" name="status" value="read">
-								   <label for="notYetRead">Not Yet Read</label><input type="radio" name="status" value="Not Yet Read">
-					<input id="submit" type="submit" name="submit" value="Submit">
+					<div id="formtitle"><b>Title:</b><input type="text" name="title"></div>
+					<div id="formauthor"><b>Author:</b><input type="text" name="author"></div>
+					<div id="formpages"><b>Pages:</b><input type="text" name="pages"></div>
+
+					<div id="formstatus">
+						<b id="stretch1">Status:</b>
+						<div id="stretch2">
+							<label for="read">Read</label><input type="radio" name="status" value="read">
+						</div>
+						<div id="stretch3">
+							
+						</div>
+						<div id="stretch4"><label for="notYetRead">Unread</label><input type="radio" name="status" value="Not Yet Read">
+						</div>
+					</div>
+					<div id="formsubmit"><input id="submit" type="submit" name="submit" value="Submit"></div>
 				</form>
-
   			</div>
-
 		</div>
 
 		<div class="container">
